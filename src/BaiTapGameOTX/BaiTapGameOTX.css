@@ -1,0 +1,64 @@
+@font-face{
+    font-family: fontGame;
+    src: url('../assets/Pony.ttf');
+}
+
+.gameOTX{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+	background-image: url('../assets/bgGame.png');
+	background-size: 100%;
+	font-family: fontGame;
+}
+
+.theThink{
+	border: 5px solid #45D994;
+	width: 100px;
+	height: 100px;
+	background: white;
+	border-radius: 10px;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.player{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.btnClick {
+	width: 60px;
+	height: 60px;
+
+}
+
+.btnClick:focus {
+	outline: none;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #45D994;
+	border-radius: .4em;
+	
+}
+
+.speech-bubble:after {
+	content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #45D994;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: 26.5px;
+    margin-bottom: -17px;
+}
